@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniLink - Connecting you to a safer standard.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #111827;
+            background-image: radial-gradient(circle at top right, rgba(79, 70, 229, 0.4), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.3), transparent 50%);
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .feature-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .icon-container {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f4f6;
+             border-bottom: 1px solid #e5e7eb;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-bg text-white pt-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">The Central Link for Your Entire Operation</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-indigo-200">OmniLink unifies your drivers, dispatch, safety, and maintenance into one intuitive platform.</p>
+                <p class="mt-2 text-lg md:text-xl max-w-3xl mx-auto font-semibold text-white">Connecting you to a safer standard.</p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#contact" class="bg-indigo-500 text-white font-semibold px-8 py-4 rounded-lg text-lg cta-button">Request a Free Demo</a>
+                    <a href="#modules" class="bg-white/20 backdrop-blur-sm text-white font-semibold px-8 py-4 rounded-lg text-lg transition hover:bg-white/30">Explore Modules</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Core Modules</h2>
+                    <p class="mt-3 text-lg max-w-2xl mx-auto text-gray-600">OmniLink provides dedicated tools for every member of your team, ensuring seamless communication and operational excellence.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dispatcher Card -->
+                    <a href="dispatcher.html" class="feature-card block">
+                        <div class="icon-container">
+                            <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900">Dispatcher</h3>
+                            <p class="mt-2 text-base text-gray-600 flex-grow">A powerful command center to monitor your entire operation in real-time, manage assignments, and communicate instantly.</p>
+                        </div>
+                    </a>
+
+                    <!-- Driver Card -->
+                    <a href="driver.html" class="feature-card block">
+                        <div class="icon-container">
+                             <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14a2 2 0 100-4 2 2 0 000 4z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12v6"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.24 7.76L12 12"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.76 7.76L12 12"></path>
+                             </svg>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900">Driver</h3>
+                            <p class="mt-2 text-base text-gray-600 flex-grow">Empower drivers with a dedicated mobile portal for turn-by-turn navigation, digital vehicle inspections (DVIR), and direct messaging.</p>
+                        </div>
+                    </a>
+
+                    <!-- Router Card -->
+                    <a href="router.html" class="feature-card block">
+                        <div class="icon-container">
+                            <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 16.382V5.618a1 1 0 00-1.447-.894L15 7m-6 3l6-3m0 0l-6 3m6-3v10"></path></svg>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900">Router</h3>
+                            <p class="mt-2 text-base text-gray-600 flex-grow">Build, manage, and optimize routes with drag-and-drop simplicity. Respond to real-time events and ensure maximum efficiency.</p>
+                        </div>
+                    </a>
+
+                    <!-- Safety Card -->
+                    <a href="safety.html" class="feature-card block">
+                        <div class="icon-container">
+                             <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c-1.93 0-3.5 1.57-3.5 3.5v.5h7v-.5c0-1.93-1.57-3.5-3.5-3.5z"></path></svg>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900">Safety</h3>
+                            <p class="mt-2 text-base text-gray-600 flex-grow">Centralize incident reporting, track driver certifications, and maintain a digital audit trail for all compliance documents.</p>
+                        </div>
+                    </a>
+
+                    <!-- Maintenance Card -->
+                    <a href="maintenance.html" class="feature-card block">
+                        <div class="icon-container">
+                            <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900">Maintenance</h3>
+                            <p class="mt-2 text-base text-gray-600 flex-grow">Automate preventative maintenance schedules, manage work orders, and track parts inventory to minimize vehicle downtime.</p>
+                        </div>
+                    </a>
+
+                    <!-- Manager Card -->
+                    <a href="manager.html" class="feature-card block">
+                        <div class="icon-container">
+                            <svg class="w-16 h-16 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold text-gray-900">Manager</h3>
+                            <p class="mt-2 text-base text-gray-600 flex-grow">Access a comprehensive dashboard with key performance indicators. Make data-driven decisions to improve your entire operation.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="platform-features" class="py-20 bg-white">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Platform-Wide Features</h2>
+                    <p class="mt-3 text-lg max-w-2xl mx-auto text-gray-600">Powerful tools that connect every module and streamline your workflow.</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+                     <a href="communication.html" class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg text-indigo-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition">Communication</h3>
+                            <p class="mt-1 text-gray-600">Keep everyone in sync with built-in, role-based messaging. Send alerts, updates, and direct messages between dispatch, drivers, and management without leaving the platform.</p>
+                        </div>
+                    </a>
+                    <a href="livedata.html" class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg text-indigo-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.636 18.364a9 9 0 010-12.728m9.9 2.828a5 5 0 010 7.072M12 12a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition">Live Data</h3>
+                            <p class="mt-1 text-gray-600">Make decisions based on what's happening now, not yesterday. Our platform provides real-time GPS tracking, status updates, and operational data across all modules.</p>
+                        </div>
+                    </a>
+                    <a href="meetings.html" class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg text-indigo-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition">Meetings</h3>
+                            <p class="mt-1 text-gray-600">Schedule and document safety briefings, training sessions, and operational meetings directly within OmniLink. Attach files and track attendance for a complete record.</p>
+                        </div>
+                    </a>
+                    <a href="reporting.html" class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-lg text-indigo-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition">Reporting</h3>
+                            <p class="mt-1 text-gray-600">Generate comprehensive reports on everything from on-time performance and fuel efficiency to maintenance costs and safety incidents. Turn your data into actionable insights.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact / CTA Section -->
+        <section id="contact" class="bg-gray-800 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold">Ready to Set a Safer Standard?</h2>
+                        <p class="mt-4 text-lg text-indigo-200">See OmniLink in action. Fill out the form to schedule a personalized demo with one of our specialists. We'll show you how our platform can transform your operations.</p>
+                    </div>
+                    <div id="contact-form-container" class="bg-white p-8 rounded-lg shadow-2xl">
+                        <form id="contact-form">
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" name="name" id="name" autocomplete="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-gray-900">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" name="email" id="email" autocomplete="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-gray-900">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700">Company / Organization</label>
+                                    <input type="text" name="company" id="company" autocomplete="organization" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-gray-900">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-gray-900" placeholder="Tell us about your fleet size and needs..."></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-indigo-600 cta-button">Submit Request</button>
+                                </div>
+                            </div>
+                        </form>
+                         <div id="success-message" class="hidden text-center py-10">
+                            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-green-100 rounded-full">
+                               <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <h3 class="mt-4 text-2xl font-bold text-gray-900">Message Sent!</h3>
+                            <p class="mt-2 text-gray-600">Thank you for your interest. We will be in touch with you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="footer-placeholder"></div>
+    </main>
+
+    <script src="js/omnilink.js" defer></script>
+</body>
+</html>

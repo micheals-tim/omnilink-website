@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Module - OmniLink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-subpage {
+            background-color: #1f2937;
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .screenshot {
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+         .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Subpage Hero -->
+        <section class="hero-bg-subpage text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Proactive Vehicle Maintenance</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">Minimize downtime and extend the life of your vehicles with a fully integrated maintenance and repair workflow.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+                <!-- Feature 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Automated Maintenance Scheduling</h2>
+                        <p class="mt-4 text-lg text-gray-600">Move from reactive fixes to proactive care. Set up service reminders based on mileage, engine hours, or time intervals. OmniLink automatically notifies you when a vehicle is due for service, helping you prevent costly breakdowns.</p>
+                        <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Create custom service schedules for each vehicle type</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Receive automated alerts for upcoming maintenance</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Improve vehicle longevity and reliability</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Maintenance+Schedule" alt="Screenshot of the maintenance scheduling interface" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-3xl font-bold text-gray-900">Digital Work Order Management</h2>
+                        <p class="mt-4 text-lg text-gray-600">Streamline your entire repair process. Create, assign, and track digital work orders from start to finish. Technicians can see their assigned tasks, log parts used, and record time spent, giving you a clear view of your maintenance workflow.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Generate work orders from failed DVIR items</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Track labor and parts costs for each job</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Monitor work order status in real-time</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Digital+Work+Order" alt="Screenshot of a digital work order" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Comprehensive Service History</h2>
+                        <p class="mt-4 text-lg text-gray-600">Every inspection, service, and repair is automatically logged against the vehicle's profile. Access a complete, searchable service history for any vehicle in your fleet to identify recurring issues, track warranty information, and understand the total cost of ownership.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Full digital audit trail for every vehicle</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Analyze maintenance costs and trends over time</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Make informed decisions on vehicle replacement</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Vehicle+Service+History" alt="Screenshot of a vehicle's service history log" class="screenshot">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/omnilink.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Module - OmniLink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-subpage {
+            background-color: #1f2937;
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .screenshot {
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+         .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Subpage Hero -->
+        <section class="hero-bg-subpage text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Data-Driven Management</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">Gain a high-level view of your entire operation. Turn complex data into clear, actionable insights to drive efficiency and growth.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+                <!-- Feature 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Comprehensive Dashboard</h2>
+                        <p class="mt-4 text-lg text-gray-600">Your entire operation, summarized. The manager dashboard brings together key performance indicators (KPIs) from every module, giving you an instant overview of on-time performance, vehicle health, safety incidents, and budget adherence.</p>
+                        <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Track key metrics in real-time</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Customize widgets to focus on what matters most</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Drill down into specific modules for more detail</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Manager+Dashboard" alt="Screenshot of the main manager dashboard" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-3xl font-bold text-gray-900">Customizable Reporting</h2>
+                        <p class="mt-4 text-lg text-gray-600">Go beyond the dashboard with powerful reporting tools. Generate detailed reports on fuel usage, maintenance costs, driver performance, route efficiency, and more. Export data to share with stakeholders or for further analysis.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Schedule recurring reports to be sent automatically</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Use pre-built templates or create your own custom reports</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Visualize data with charts and graphs</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Custom+Report+Builder" alt="Screenshot of the custom report builder interface" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">User & Permissions Management</h2>
+                        <p class="mt-4 text-lg text-gray-600">Maintain complete control over your system. The manager module allows you to easily add or remove users, define roles, and set granular permissions, ensuring team members can only access the information and tools relevant to their job.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Create custom roles with specific access rights</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>View audit logs of user activity</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integrate with Single Sign-On (SSO) providers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Permissions+Settings" alt="Screenshot of user permissions settings" class="screenshot">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+    <script src="js/omnilink.js" defer></script>
+
+</body>
+</html>

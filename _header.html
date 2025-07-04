@@ -1,0 +1,95 @@
+<!-- Header -->
+<header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 left-0 right-0 z-50 shadow-sm">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center space-x-8">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3 flex-shrink-0">
+                    <div class="w-10 h-10 flex items-center justify-center bg-indigo-600 rounded-lg p-2">
+                        <svg class="w-full h-full text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12h3m15 0h-3M12 3v3m0 15v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M9 12a3 3 0 013-3h3V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 12a3 3 0 01-3 3H9v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="6" cy="12" r="1" fill="currentColor"/><circle cx="18" cy="12" r="1" fill="currentColor"/><circle cx="12" cy="6" r="1" fill="currentColor"/><circle cx="12" cy="18" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-900">OmniLink</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-indigo-600 transition flex items-center">
+                            Modules
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10">
+                            <a href="dispatcher.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Dispatcher</a>
+                            <a href="driver.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Driver</a>
+                            <a href="router.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Router</a>
+                            <a href="safety.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Safety</a>
+                            <a href="maintenance.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Maintenance</a>
+                            <a href="manager.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Manager</a>
+                        </div>
+                    </div>
+                        <div class="relative dropdown">
+                        <button class="text-gray-600 hover:text-indigo-600 transition flex items-center">
+                            Features
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10">
+                            <a href="communication.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Communication</a>
+                            <a href="livedata.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Live Data</a>
+                            <a href="meetings.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Meetings</a>
+                            <a href="reporting.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Reporting</a>
+                        </div>
+                    </div>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
+                </nav>
+            </div>
+            
+            <div class="flex items-center">
+                <a href="index.html#contact" class="hidden md:inline-block bg-indigo-600 text-white font-semibold px-5 py-3 rounded-lg cta-button">Request a Demo</a>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden ml-4">
+                    <button id="mobile-menu-button" class="text-gray-800 hover:text-indigo-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <div>
+            <button id="mobile-modules-button" class="w-full text-left flex justify-between items-center py-2 px-4 text-sm font-semibold text-gray-700 hover:bg-indigo-50">
+                Modules
+                <svg id="mobile-arrow-modules" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="mobile-modules-list" class="hidden pl-4">
+                <a href="dispatcher.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Dispatcher</a>
+                <a href="driver.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Driver</a>
+                <a href="router.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Router</a>
+                <a href="safety.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Safety</a>
+                <a href="maintenance.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Maintenance</a>
+                <a href="manager.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Manager</a>
+            </div>
+        </div>
+        <div>
+            <button id="mobile-features-button" class="w-full text-left flex justify-between items-center py-2 px-4 text-sm font-semibold text-gray-700 hover:bg-indigo-50">
+                Features
+                <svg id="mobile-arrow-features" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="mobile-features-list" class="hidden pl-4">
+                <a href="communication.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Communication</a>
+                <a href="livedata.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Live Data</a>
+                <a href="meetings.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Meetings</a>
+                <a href="reporting.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Reporting</a>
+            </div>
+        </div>
+        <a href="index.html#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Contact</a>
+        <div class="p-4">
+            <a href="index.html#contact" class="block text-center w-full bg-indigo-600 text-white font-semibold px-5 py-3 rounded-lg cta-button">Request a Demo</a>
+        </div>
+    </div>
+</header>

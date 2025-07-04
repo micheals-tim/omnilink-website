@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings & Scheduling - OmniLink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-subpage {
+            background-color: #1f2937;
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .screenshot {
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+         .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Subpage Hero -->
+        <section class="hero-bg-subpage text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Unified Calendars & Meeting Management</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">Organize everything from driver schedules to board meetings with a centralized, shared calendar system that ensures everyone is on the same page.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+                <!-- Feature 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Shared Team & Group Calendars</h2>
+                        <p class="mt-4 text-lg text-gray-600">Eliminate scheduling conflicts and improve transparency. Create shared calendars for different groups—such as drivers, maintenance staff, or managers—to visualize availability and coordinate schedules for the day, week, or month ahead.</p>
+                        <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Overlay multiple calendars to see all activities at once</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integrates with driver time-off requests</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Perfect for planning team-wide training or events</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Shared+Team+Calendar" alt="Screenshot of a shared team calendar view" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-3xl font-bold text-gray-900">Driver & Router Time Scheduling</h2>
+                        <p class="mt-4 text-lg text-gray-600">Give drivers a voice in their routes. This feature allows drivers to book dedicated time slots with the routing department to discuss route details, provide feedback, or address concerns, ensuring fair access and collaborative planning.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Set available time slots for routers</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Drivers can book appointments directly</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Creates a transparent and fair scheduling process</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Driver+&+Router+Scheduling" alt="Screenshot of the driver and router scheduling interface" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Formal Meeting Organization</h2>
+                        <p class="mt-4 text-lg text-gray-600">Streamline the organization of important meetings. Schedule safety briefings, manager/district meetings, or training sessions. Invite specific groups, attach agendas or documents, and track attendance for a complete, auditable record.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Send calendar invites to internal and external attendees</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Attach meeting agendas, minutes, and other files</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>AI-powered notetaking and action item generation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Meeting+Scheduler" alt="Screenshot of the formal meeting scheduling tool" class="screenshot">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+    <script src="js/omnilink.js" defer></script>
+
+</body>
+</html>
