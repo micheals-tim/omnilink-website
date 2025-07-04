@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatcher Module - OmniLink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-subpage {
+            background-color: #1f2937;
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .screenshot {
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+         .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Subpage Hero -->
+        <section class="hero-bg-subpage text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Dispatcher Command Center</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">The central nervous system of your operation. Monitor, manage, and communicate with your entire team from a single, powerful interface.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+                <!-- Feature 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Unified Dispatch Log</h2>
+                        <p class="mt-4 text-lg text-gray-600">Monitor your entire operation in real-time with a comprehensive, side-by-side view of active and available drivers. Instantly see status, times, and vehicle assignments to make informed decisions on the fly.</p>
+                        <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Live status updates (In/Out)</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Customizable split-screen view</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Clear assignment of vehicles and trips</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Dispatch+Log+View" alt="Screenshot of the Unified Dispatch Log" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-3xl font-bold text-gray-900">Instant Driver Actions</h2>
+                        <p class="mt-4 text-lg text-gray-600">Don't hunt through menus. Right-click on any driver to access a powerful context menu. Clock drivers out, assign substitutes, view schedules, or send messages without ever leaving the screen, saving valuable time.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Clock in/out drivers instantly</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Substitute drivers or vehicles on the fly</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Quick access to messaging and calls</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Driver+Actions+Menu" alt="Screenshot of the Instant Driver Actions menu" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Detailed Driver Assignments</h2>
+                        <p class="mt-4 text-lg text-gray-600">Get a complete picture of a driver's day with a single click. View all assigned trips, including times, routes, and key notes, in a clear and concise pop-up. Eliminate confusion and ensure everyone is on the same page.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>At-a-glance view of all trips</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Includes scheduled times and driver notes</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reduces errors and miscommunication</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Driver+Assignments+View" alt="Screenshot of Detailed Driver Assignments" class="screenshot">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/omnilink.js" defer></script>
+
+</body>
+</html>

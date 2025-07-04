@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting Feature - OmniLink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-subpage {
+            background-color: #1f2937;
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+        }
+        .screenshot {
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+         .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+    <div id="header-placeholder"></div>
+
+    
+    <main>
+        <!-- Subpage Hero -->
+        <section class="hero-bg-subpage text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Turn Data into Actionable Insights</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">Unlock the power of your operational data with comprehensive, easy-to-understand reports and visualizations.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+                <!-- Feature 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Customizable Dashboards</h2>
+                        <p class="mt-4 text-lg text-gray-600">Stop digging for information. Create personalized dashboards that display the Key Performance Indicators (KPIs) that matter most to you and your team. Visualize trends in on-time performance, fuel efficiency, maintenance costs, and more.</p>
+                        <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Drag-and-drop widgets for easy customization</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Create multiple dashboards for different roles or goals</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>See your most important data at a glance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Custom+Dashboard" alt="Screenshot of a customizable reporting dashboard" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2">
+                        <h2 class="text-3xl font-bold text-gray-900">In-Depth Report Generation</h2>
+                        <p class="mt-4 text-lg text-gray-600">Dive deep into your operational data. Use our extensive library of pre-built report templates or create your own from scratch. Generate detailed reports on driver performance, vehicle maintenance history, safety incidents, and route efficiency.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reports for compliance, finance, and operations</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Filter and sort data to find specific information</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Export reports to PDF or CSV for easy sharing</li>
+                        </ul>
+                    </div>
+                    <div class="md:order-1">
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Report+Builder" alt="Screenshot of the report generation tool" class="screenshot">
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">Automated Report Delivery</h2>
+                        <p class="mt-4 text-lg text-gray-600">Keep stakeholders informed without lifting a finger. Schedule any report to be generated and emailed automatically on a daily, weekly, or monthly basis. Ensure that managers, clients, or board members always have the latest information.</p>
+                         <ul class="mt-6 space-y-2 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Set up recurring report schedules</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Send to individuals or entire groups</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-indigo-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reduces manual work and ensures consistent updates</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/e0e7ff/4338ca?text=Automated+Report+Scheduler" alt="Screenshot of the automated report scheduling interface" class="screenshot">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+ <!-- Your page's main content here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/omnilink.js" defer></script>
+
+</body>
+</html>
