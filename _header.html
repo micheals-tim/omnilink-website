@@ -18,12 +18,23 @@
                 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-8">
-                    <div class="relative dropdown">
-                        <button class="text-gray-600 hover:text-indigo-600 transition flex items-center">
+                    <!-- 
+                      FIX APPLIED HERE:
+                      1. Added `group` to the parent div to group the button and menu.
+                      2. Added `pb-5` to create an invisible "bridge" for the mouse.
+                    -->
+                    <div class="relative group pb-5">
+                        <button class="text-gray-600 group-hover:text-indigo-600 transition flex items-center">
                             Modules
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
-                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10">
+                        <!-- 
+                          FIX APPLIED HERE:
+                          1. Removed `hidden`.
+                          2. Added classes to control visibility on `group-hover`.
+                          3. Added transition classes for a smooth fade-in effect.
+                        -->
+                        <div class="absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             <a href="dispatcher.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Dispatcher</a>
                             <a href="driver.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Driver</a>
                             <a href="router.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Router</a>
@@ -32,12 +43,13 @@
                             <a href="manager.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Manager</a>
                         </div>
                     </div>
-                        <div class="relative dropdown">
-                        <button class="text-gray-600 hover:text-indigo-600 transition flex items-center">
+                        
+                    <div class="relative group pb-5">
+                        <button class="text-gray-600 group-hover:text-indigo-600 transition flex items-center">
                             Features
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
-                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10">
+                        <div class="absolute bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             <a href="communication.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Communication</a>
                             <a href="livedata.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Live Data</a>
                             <a href="meetings.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Meetings</a>
@@ -59,7 +71,7 @@
             </div>
         </div>
     </div>
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu (No changes needed here) -->
     <div id="mobile-menu" class="hidden md:hidden">
         <div>
             <button id="mobile-modules-button" class="w-full text-left flex justify-between items-center py-2 px-4 text-sm font-semibold text-gray-700 hover:bg-indigo-50">
